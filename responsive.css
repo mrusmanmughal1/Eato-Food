@@ -92,6 +92,9 @@
   }
 
   /* mobile nav  */
+  .nav-icon{
+    font-size: 4rem;
+  }
 
   .nav-icon-btn {
     display: block;
@@ -99,6 +102,13 @@
   .nav-icon-btn:last-child , .nav-icon-btn .nav-icon[name="close-outline"]{
   display: none;
 }
+.main-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(0);
+}
+ 
   /**********/
   .main-nav {
     position: absolute;
@@ -119,12 +129,7 @@
     font-size: 2.2rem;
   }
 
-  .main-nav.open {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateY(0);
-  }
+
   .main-nav-list {
     flex-direction: column;
     justify-content: center;
